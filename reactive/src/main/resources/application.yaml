@@ -1,0 +1,11 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgres://${DB_HOST:localhost}:5432/example
+    host: localhost
+    port: 5432
+    database: example
+    username: example
+    password: example
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_HOST:localhost}:9092

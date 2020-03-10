@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/example
+    username: example
+    password: example
+  jpa:
+    hibernate:
+      ddl-auto: create
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_HOST:localhost}:9092
+      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+      key-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
