@@ -9,3 +9,4 @@ spring:
   kafka:
     producer:
       bootstrap-servers: ${KAFKA_HOST:localhost}:9092
+waitForSavedEntity: ${WAIT_FOR_SAVED_ENTITY:false}

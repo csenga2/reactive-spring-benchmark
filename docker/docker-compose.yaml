@@ -44,8 +44,9 @@ services:
     ports:
       - '9001:8080'
     environment:
-      DB_HOST: db
+      DB_HOST: example_db
       KAFKA_HOST: kafka
+      WAIT_FOR_SAVED_ENTITY: false
     deploy:
       resources:
         limits:

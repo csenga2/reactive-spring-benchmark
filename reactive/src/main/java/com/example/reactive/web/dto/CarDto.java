@@ -4,17 +4,17 @@ import com.example.reactive.persistence.model.CarEntity;
 
 public class CarDto {
 
-    private long id;
+    private Long id;
 
     private String plateNumber;
 
     private String type;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
